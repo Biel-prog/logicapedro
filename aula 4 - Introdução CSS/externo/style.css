@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Federant&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -13,8 +15,37 @@ header {
 }
 main {
     font-size: 16px;
+    background-color: darkslategrey;
+}
+
+h1,h2 {
+    text-align: center;
 }
 
 p {
-    font-size: 2em;
+    text-align: justify;
+    font-family: "Federant", serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 2;
+    letter-spacing: 2px;
+    text-indent: 5px;
+    color: blue;
+}
+
+div {
+    font-size: 16px;
+}
+
+main > section > div > p {
+    font-size: 1em;
+    color: red;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
 }

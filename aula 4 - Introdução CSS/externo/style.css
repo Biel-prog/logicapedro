@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif; 
+}
+
+body {
+    background-color: white;
+}
+
+header {
+    background-color: lightblue; /*Muda cor de fundo*/
+}
+main {
+    font-size: 16px;
+}
+
+p {
+    font-size: 2em;
+}

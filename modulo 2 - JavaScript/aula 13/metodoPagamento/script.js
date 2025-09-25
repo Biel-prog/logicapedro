@@ -9,7 +9,7 @@ function calcularPagamento() {
             resultado.innerHTML = "O valor a ser pago é de R$ " + valorFinal.toFixed(2)
             break
         case "debito":
-            let valorFinal = valorGasto * 0.95
+            valorFinal = valorGasto * 0.95
             resultado.innerHTML = "O valor a ser pago é de R$ " + valorFinal.toFixed(2)
             break
         case "credito":

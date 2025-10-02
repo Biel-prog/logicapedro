@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Alunos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Gerenciador de Alunos</h1>
+    </header>
+
+    <main>
+        <div id="form-container">
+            <input type="text" id="NomeAluno" placeholder="Nome do Aluno" required>
+            <input type="number" id="NotaAluno" placeholder="Nota" min="0" max="10" required>
+
+            <button id="btnCadastrar" onclick="cadastrarAlunos()">Cadastrar</button>
+        </div>
+
+        <div id="botoesFiltro">
+            <button id="btnAprovados" onclick="mostarAprovados()">Mostrar Aprovados</button>
+            <button id="btnReprovados" onclick="mostarReprovados()">Mostrar Reprovados</button>
+            <button id="btnTodos" onclick="mostarTodos()">Mostrar Todos</button>
+        </div>
+
+        <h2>Alunos Cadastrados</h2>
+        <ul id="listaAlunos"></ul>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -45,7 +45,9 @@
     </main>
 
     <?php
-        if($_SERVER["REQUEST_METHOD"] == "POST"){
+
+        try {
+            if($_SERVER["REQUEST_METHOD"] == "POST"){
             include("../conexao/conexao.php");
 
             $nome = $_POST["nome"];
@@ -68,6 +70,17 @@
             $conn->close();            
 
         }
+    }
+    catch (mysql_sql_exception $e){
+        
+        if (str_contains($e->getMessage(), "Duplicate entry")) {
+            echo "<div class='mensagem sucesso'>E-mail já cadastrado </div>";
+        } else {
+            echo "<div class='mensagem sucesso'>Erro ao cadastrar. Tente novamente mais tarde.</div>";
+        }
+        
+    }
+
     ?>
 
 </body>
